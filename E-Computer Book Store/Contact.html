@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body
+ {
+font-family: Arial, Helvetica, sans-serif;
+background-image: url('images/Contactbackground1.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+* {box-sizing: border-box;}
+
+input[type=text],input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+label{
+    color: white;
+}
+input[type=submit] {
+  background-color:#337ab7; 
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Contactcontainer {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width:450px;
+  padding: 20px 30px;
+  margin: 3% 3%;
+}
+</style>
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="Contactcontainer">
+  <form action="#" autocomplete="off">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+    <label for="email">Email</label>
+    <input type="email" id="lname" name="email" placeholder="eg..meghanaapt@gmail.com" required>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="item">
+          <h3>About Us</h3>
+          <!-- <p>Find a new world at your fingertips with our wide selection of books online at E-Computer Book Store. Our online bookstore features the best computer books from bestselling authors, so you can click on categories to browse top computer books.You can find many computer books online that teach Various Computer Programming languages such as c,c++,Javascript,Basic Internet, Basics About computers,Web Development and whatnot.Find the perfect book for your next read from the book experts at E-Computer Book Store.</p> -->
+          <p>E-Computer Book Store is  online bookstore where we provide the best computer books from bestselling authors. Here You can find many computer books online that teach Various Computer Programming languages such as c,c++,Javascript,Basic Internet and whatnot</p> 
+        </div>
+        <div class="item" >
+            <h3>Get In Touch</h3>
+             <div class="icons" style="text-align: center;">
+                <div class="IconDis"><i class="fas fa-map-marker-alt"></i>Flat-no: s3,Mehar Nagar,Kakinada</div>
+                <div class="IconDis"><i class="fas fa-phone-alt"></i>9912550076</div>
+                <div class="IconDis"><i class="fas fa-envelope"></i>meghanaapt@gmail.com</div>
+             </div>
+        </div>
+        <div class="item">
+            <h3>Follow us</h3>
+          <center><div class="icons" style="margin-top: 20px;">
+                <i class="fab fa-whatsapp" style="font-size: 30px;color:white;background-color: green;border-radius: 50%;cursor: pointer;"></i>
+                <i class="fab fa-facebook" style="font-size: 30px;color:white;background-color: rgb(14, 81, 158);border-radius: 50%;cursor: pointer;"></i>
+                <i class="fab fa-instagram-square" style="font-size: 30px;color:white;background-color: rgb(211, 39, 96);border-radius: 50%;cursor: pointer;"></i>
+                <i class="fab fa-twitter-square"style="font-size: 30px;color:white;background-color:rgb(14, 81, 158);border-radius: 50%;cursor: pointer;"></i>
+             </div></center> 
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; Copyright.<a href="Home.html" target="content">E-ComputerBooksStore</a></p>
+    </div>
+</footer>
+</body>
+</html>

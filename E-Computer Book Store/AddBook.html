@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<style>
+    .border{
+	border: 2px solid white;
+	width:50%;
+	height:500px;
+	margin:auto;
+	padding: 10px;
+	}
+    table input,table textarea{
+        width:80%;
+        padding: 3px;
+    }
+    table input:focus,table textarea:focus{
+border-color: var(--blue);
+  outline-color: #1449C3;
+  transition: all 0.3s ease;
+    }
+</style>
+</head>
+<body>
+    <div class="border">
+    <form onsubmit="alert('BOOK ADDED SUCCEFULLY')" autocomplete="off">
+		<table width="100%" style="border-spacing:20px;text-align: left;">
+            <colgroup>
+                <col span="1" style="width: 20%;">
+                <col span="1" style="width: 80%;">
+             </colgroup>
+			<tr>
+				<th>ISBN</th>
+				<td><input type="text" name="isbn"></td>
+			</tr>
+			<tr>
+				<th>Title</th>
+				<td><input type="text" name="title" required></td>
+			</tr>
+			<tr>
+				<th>Author</th>
+				<td><input type="text" name="author" required></td>
+			</tr>
+			<tr>
+				<th>Image</th>
+				<td><input type="file" name="image"></td>
+			</tr>
+			<tr>
+				<th>Description</th>
+				<td><textarea name="descr" cols="40" rows="5"></textarea></td>
+			</tr>
+			<tr>
+				<th>Price</th>
+				<td><input type="text" name="price" required></td>
+			</tr>
+			<tr>
+				<th>Publisher</th>
+				<td><input type="text" name="publisher" required></td>
+			</tr>
+		</table>
+	<center><input type="submit" name="add" value="Add new book" class="btn">
+		<input type="reset" value="cancel" onclick="alert('All The Book Details will be Cleared')" style="background-color: white;color:black;padding:6px 30px;cursor:pointer;">
+	</form></center></div>
+</body>
+</html>

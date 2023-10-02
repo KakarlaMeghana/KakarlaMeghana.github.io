@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Details</title>
+    <!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="Cardcontainer">
+    <div class="title">
+      <h4>Enter Your Card Information</h4>
+    </div>
+    <div class="flex-container"> 
+      <form action="Home.html" onsubmit="alert('Your order has been processed sucessfully. ')" autocomplete="off">
+      <div class="flex-item icon-container">
+        <h3>Accepted Cards</h3>
+        <i class="fab fa-cc-visa" style="color:navy;font-size: 3rem;"></i>
+        <i class="fab fa-cc-amex" style="color:blue;font-size: 3rem;"></i>
+        <i class="fab fa-cc-mastercard" style="color:red;font-size: 3rem;"></i>
+        <i class="fab fa-cc-discover" style="color:orange;font-size: 3rem;"></i>
+      </div>
+      <div class="flex-item">
+        <label for="cname">Name on Card</label>
+        <input type="text" id="cname" name="cardname" placeholder="Account Holder Name" required>
+      </div>
+      <div class="flex-item">
+        <label for="ccnum">Credit card number</label>
+        <input type="text" id="ccnum" name="cardnumber" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="1111-2222-3333-4444" required>
+      </div>
+      <div class="row">
+      <div class="flex-item">
+        <label for="expmonth">Exp Month</label>
+        <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+      </div>
+      <div class="flex-item">
+        <label for="expyear">Exp Year</label>
+        <input type="text" id="expyear" name="expyear" pattern="[0-9]{4}" placeholder="2018" required>
+      </div>
+      <div class="flex-item">
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" pattern="[0-9]{3}" placeholder="352" required>
+      </div>
+      </div>
+      <div class="flex-item">
+        <center><input type="submit" value="Purchase" class="btn">
+     </div>
+    </form>
+    <div class="flex-item">
+     <a href="Categories.html" ><input type="submit" value="Continue" class="btn"></a>
+      <p>Please press Purchase to confirm your purchase, or Continue to add or remove items.</p>
+   </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="footer-container">
+      <div class="item">
+        <h3>About Us</h3>
+        <!-- <p>Find a new world at your fingertips with our wide selection of books online at E-Computer Book Store. Our online bookstore features the best computer books from bestselling authors, so you can click on categories to browse top computer books.You can find many computer books online that teach Various Computer Programming languages such as c,c++,Javascript,Basic Internet, Basics About computers,Web Development and whatnot.Find the perfect book for your next read from the book experts at E-Computer Book Store.</p> -->
+        <p>E-Computer Book Store is  online bookstore where we provide the best computer books from bestselling authors. Here You can find many computer books online that teach Various Computer Programming languages such as c,c++,Javascript,Basic Internet and whatnot</p> 
+      </div>
+      <div class="item" >
+          <h3>Get In Touch</h3>
+           <div class="icons" style="text-align: center;">
+              <div class="IconDis"><i class="fas fa-map-marker-alt"></i>Flat-no: s3,Mehar Nagar,Kakinada</div>
+              <div class="IconDis"><i class="fas fa-phone-alt"></i>9912550076</div>
+              <div class="IconDis"><i class="fas fa-envelope"></i>meghanaapt@gmail.com</div>
+           </div>
+      </div>
+      <div class="item">
+          <h3>Follow us</h3>
+        <center><div class="icons" style="margin-top: 20px;">
+              <i class="fab fa-whatsapp" style="font-size: 30px;color:white;background-color: green;border-radius: 50%;cursor: pointer;"></i>
+              <i class="fab fa-facebook" style="font-size: 30px;color:white;background-color: rgb(14, 81, 158);border-radius: 50%;cursor: pointer;"></i>
+              <i class="fab fa-instagram-square" style="font-size: 30px;color:white;background-color: rgb(211, 39, 96);border-radius: 50%;cursor: pointer;"></i>
+              <i class="fab fa-twitter-square"style="font-size: 30px;color:white;background-color:rgb(14, 81, 158);border-radius: 50%;cursor: pointer;"></i>
+           </div></center> 
+      </div>
+  </div>
+  <div class="copyright">
+      <p>&copy; Copyright.<a href="Home.html" target="content">E-ComputerBooksStore</a></p>
+  </div>
+</footer>
+</body>
+</html>

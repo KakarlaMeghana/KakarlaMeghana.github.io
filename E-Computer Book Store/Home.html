@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<head>
+    <title>Home Page</title>
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .home{
+            background-image: url("./Images/banner-bg.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .banner{
+            width:500px;
+            display: flex;
+            justify-content: right;
+        }
+        .home .row{
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:1.5rem; 
+        }
+    </style>
+</head>
+<body>
+ <section class="home">
+     <div class="row">
+        <div class="content">
+            <h3>E-Computer Book Store</h3>
+            <p>Get latest Information on Computer Books, Books on Programming, Books on Web Development.We Provide average collection of computer books and You will find very basic books with good price.</p>
+            <button class="btn"><a href="Categories.html">Shop Now</a></button>
+        </div>
+        <div class="books-slider">
+            <div>
+                <a href="#" class="swiper-slide"><img src="Images/Cprogramming1.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="Images/Datastructures4.jpg" alt=""></a>
+                <a href="#" class="swiper-slide"><img src="Images/Algorithm2.jpg" alt=""></a>
+            </div>
+            <img src="image/stand.png" class="stand" alt="">
+        </div>
+    </div>
+ </section>
+<section class="icons-container">
+
+    <div class="icons">
+        <i class="fas fa-shipping-fast"></i>
+        <div class="content">
+            <h3>free shipping</h3>
+            <p>order over $100</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+            <h3>secure payment</h3>
+            <p>100 secure payment</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+            <h3>easy returns</h3>
+            <p>10 days returns</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+            <h3>24/7 support</h3>
+            <p>call us anytime</p>
+        </div>
+    </div>
+</section>
+<section class="featured">
+    <h1 class="heading"><span>Featured Books</span></h1>
+    <div class="books">
+    <div class="box">
+        <div class="image">
+            <img src="Images/ArtificialInteligence1.jpg" alt="Artificial Intelligence">
+        </div>
+        <div class="content">
+            <h3>Artificial Intelligence For Dummies (computer Tech)</h3>
+            <span>by John Paul Mueller</span>
+            <div class="feedback">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="far fa-star checked"></i>
+            </div>
+            <div class="price">₹675.00</div>
+            <div class="buttons">
+           <div><button class="btn" onclick="alert('SUCCESSFULLY ADDED TO CART')"><a>Add to Cart</a></button></div>
+            <div><button class="btn"><a href="Purchase.html" tagret="content">Buy Now</a></button></div> 
+        </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="Images/Webdevelopment1.jpg" alt="Web Development">
+        </div>
+        <div class="content">
+            <h3>Mastering Html, Css & Javascript Web Publishing </h3>
+            <span>by Laura Lemay</span>
+            <div class="feedback">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="far fa-star checked"></i>
+            </div>
+            <div class="price">₹479.00</div>
+            <div class="buttons">
+                <div><button class="btn" onclick="alert('SUCCESSFULLY ADDED TO CART')"><a>Add to Cart</a></button></div>
+                 <div><button class="btn"><a href="Purchase.html" tagret="content">Buy Now</a></button></div> 
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="Images/ComputerGraphic1.jpg" alt="Computer Graphics">
+        </div>
+        <div class="content">
+            <h3>Computer GraphicsWith Introdution to multimedia</h3>
+            <span>by Rajiv Chopra </span>
+            <div class="feedback">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="far fa-star checked"></i>
+            </div>
+            <div class="price">₹425.00</div>
+            <div class="buttons">
+                <div><button class="btn" onclick="alert('SUCCESSFULLY ADDED TO CART')"><a>Add to Cart</a></button></div>
+                 <div><button class="btn"><a href="Purchase.html" tagret="content">Buy Now</a></button></div> 
+             </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="Images/ComputerNetwork2.jpg" alt="Computer Networking">
+        </div>
+        <div class="content">
+            <h3>The Web Application Hacker's Handbook</h3>
+            <span>by Dafydd Stuttard</span>
+            <div class="feedback">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="far fa-star checked"></i>
+            </div>
+            <div class="price">₹500.00</span></div>
+            <div class="buttons">
+                <div><button class="btn" onclick="alert('SUCCESSFULLY ADDED TO CART')"><a>Add to Cart</a></button></div>
+                 <div><button class="btn"><a href="Purchase.html" tagret="content">Buy Now</a></button></div> 
+             </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="featured" id="HotNewBooks">
+    <h1 class="heading"><span>Hot New Releases in Computer Science Textbooks</span></h1>
+    <div class="books">
+    <div class="box">
+        <div class="image">
+            <img src="Images/Python1.jpg" alt="Python">
+        </div>
+        <div class="content">
+            <h3>Let Us Python - 4th Edition: Python Is Future, Embrace It Fast</h3>
+            <span>by Yashavant Kanetkar</span>
+            <div class="feedback">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="far fa-star checked"></i>
+                <i class="far fa-star checked"></i>
+            </div>
+            <div class="price">₹298.00</div>
+            <div class="buttons">
+                <div><button class="btn" onclick="alert('SUCCESSFULLY ADDED TO CART')"><a>Add to Cart</a></button></div>
+                 <div><button class="btn"><a href="Purchase.html" tagret="content">Buy Now</a></button></div> 
+             </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="Images/csharp.jpg" alt="C# Programming">
+        </div>
+        <div class="content">
+            <h3>C# 10 and .NET 6 Modern Cross-Platform Development: </h3>
+            <span>by Mark J. Price</span>
+            <div class="feedback">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="far fa-star checked"></i>
+            </div>
+            <div class="price">₹800.00</div>
+            <div class="buttons">
+                <div><button class="btn" onclick="alert('SUCCESSFULLY ADDED TO CART')"><a>Add to Cart</a></button></div>
+                 <div><button class="btn"><a href="Purchase.html" tagret="content">Buy Now</a></button></div> 
+             </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="Images/Cprogramming2.jpg" alt="C Programming">
+        </div>
+        <div class="content">
+            <h3>Let Us C : Authentic guide to C programming language</h3>
+            <span>by Yashavant Kanetkar</span>
+            <div class="feedback">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="far fa-star checked"></i>
+            </div>
+            <div class="price">₹268.00</div>
+            <div class="buttons">
+                <div><button class="btn" onclick="alert('SUCCESSFULLY ADDED TO CART')"><a>Add to Cart</a></button></div>
+                 <div><button class="btn"><a href="Purchase.html" tagret="content">Buy Now</a></button></div> 
+             </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="Images/ArtificialIntelligence2.jpg" alt="Artificial Intelligence2">
+        </div>
+        <div class="content">
+            <h3>The Age of AI: And Our Human Future Hardcover</h3>
+            <span>by  Henry A Kissinger</span>
+            <div class="feedback">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="far fa-star checked"></i>
+                <i class="far fa-star checked"></i>
+            </div>
+            <div class="price">₹671.00</div>
+            <div class="buttons">
+                <div><button class="btn" onclick="alert('SUCCESSFULLY ADDED TO CART')"><a>Add to Cart</a></button></div>
+                 <div><button class="btn"><a href="Purchase.html" tagret="content">Buy Now</a></button></div> 
+             </div>
+        </div>
+    </div>
+    </div>
+</section>
+<section class="featured" id="Bestsellers">
+    <h1 class="heading"><span>Bestsellers in Computer Science Textbooks</span></h1>
+    <div class="books">
+    <div class="box">
+        <div class="image">
+            <img src="Images/Cprogramming3.jpg" alt="C Programming">
+        </div>
+        <div class="content">
+            <h3>Let Us C: Authentic Guide To C Programming Language</h3>
+            <span>by  Yashavant Kanetkar</span>
+            <div class="feedback">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+            </div>
+            <div class="price">₹330.00</div>
+            <div class="buttons">
+                <div><button class="btn" onclick="alert('SUCCESSFULLY ADDED TO CART')"><a>Add to Cart</a></button></div>
+                 <div><button class="btn"><a href="Purchase.html" tagret="content">Buy Now</a></button></div> 
+             </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="Images/Datastructures1.jpg" alt="Data Structures">
+        </div>
+        <div class="content">
+            <h3>Data Structures Through C In Depth:Updated Version </h3>
+            <span>by  S.K.Srivastava</span>
+            <div class="feedback">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+            </div>
+            <div class="price">₹360.00</div>
+            <div class="buttons">
+                <div><button class="btn" onclick="alert('SUCCESSFULLY ADDED TO CART')"><a>Add to Cart</a></button></div>
+                 <div><button class="btn"><a href="Purchase.html" tagret="content">Buy Now</a></button></div> 
+             </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="Images/Python2.jpg" alt="Python">
+        </div>
+        <div class="content">
+            <h3>Let Us Python - 3rd Edition: Python Is Future, Embrace It Fast</h3>
+            <span>by  Aditya Kanetkar </span>
+            <div class="feedback">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+            </div>
+            <div class="price">₹330.00</div>
+            <div class="buttons">
+                <div><button class="btn" onclick="alert('SUCCESSFULLY ADDED TO CART')"><a>Add to Cart</a></button></div>
+                 <div><button class="btn"><a href="Purchase.html" tagret="content">Buy Now</a></button></div> 
+             </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="image">
+            <img src="Images/ArtificialIntelligence3.jpg" alt="Artificial Intelligence2">
+        </div>
+        <div class="content">
+            <h3>Artificial Intelligence | Third Edition</h3>
+            <span>by  Russell</span>
+            <div class="feedback">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+            </div>
+            <div class="price">₹746.00</div>
+            <div class="buttons">
+                <div><button class="btn" onclick="alert('SUCCESSFULLY ADDED TO CART')"><a>Add to Cart</a></button></div>
+                 <div><button class="btn"><a href="Purchase.html" tagret="content">Buy Now</a></button></div> 
+             </div>
+        </div>
+    </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="item">
+          <h3>About Us</h3>
+          <!-- <p>Find a new world at your fingertips with our wide selection of books online at E-Computer Book Store. Our online bookstore features the best computer books from bestselling authors, so you can click on categories to browse top computer books.You can find many computer books online that teach Various Computer Programming languages such as c,c++,Javascript,Basic Internet, Basics About computers,Web Development and whatnot.Find the perfect book for your next read from the book experts at E-Computer Book Store.</p> -->
+          <p>E-Computer Book Store is  online bookstore where we provide the best computer books from bestselling authors. Here You can find many computer books online that teach Various Computer Programming languages such as c,c++,Javascript,Basic Internet and whatnot</p> 
+        </div>
+        <div class="item" >
+            <h3>Get In Touch</h3>
+             <div class="icons" style="text-align: center;">
+                <div class="IconDis"><i class="fas fa-map-marker-alt"></i>Flat-no: s3,Mehar Nagar,Kakinada</div>
+                <div class="IconDis"><i class="fas fa-phone-alt"></i>9912550076</div>
+                <div class="IconDis"><i class="fas fa-envelope"></i>meghanaapt@gmail.com</div>
+             </div>
+        </div>
+        <div class="item">
+            <h3>Follow us</h3>
+          <center><div class="icons" style="margin-top: 20px;">
+                <i class="fab fa-whatsapp" style="font-size: 30px;color:white;background-color: green;border-radius: 50%;cursor: pointer;"></i>
+                <i class="fab fa-facebook" style="font-size: 30px;color:white;background-color: rgb(14, 81, 158);border-radius: 50%;cursor: pointer;"></i>
+                <i class="fab fa-instagram-square" style="font-size: 30px;color:white;background-color: rgb(211, 39, 96);border-radius: 50%;cursor: pointer;"></i>
+                <i class="fab fa-twitter-square"style="font-size: 30px;color:white;background-color:rgb(14, 81, 158);border-radius: 50%;cursor: pointer;"></i>
+             </div></center> 
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; Copyright.<a href="Home.html" target="content">E-ComputerBooksStore</a></p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Graduate');
+:root{
+    --bg-opacity: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    background-color: rgb(20 30 53/var(--bg-opacity));
+    color:white;
+}
+.header .nav-link:hover{
+    color: white;
+}
+h1{
+    font-weight: bolder;
+	font-family: 'Graduate';
+    text-transform: capitalize; 
+}
+.intro p{
+    text-transform: capitalize;
+}
+.intro h3{
+	font-weight: bolder;
+	font-family: 'Graduate';
+	color: transparent;
+	line-height: 1;
+    font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-image: linear-gradient(to left, #F90707,#0EC3FF,#FD3203,#FC058A,#A702FD,#FB4904,#047FA7);
+	-webkit-background-clip:text;
+	animation: animate 10s linear infinite;
+	-webkit-background-size: 500%;
+	background-size: 500%;
+}
+ .intro h5 {
+	font-weight: bolder;
+	font-family: 'Graduate';
+	color: transparent;
+	line-height: 1;
+	text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 5px;
+	letter-spacing: 2px;
+	background-image: linear-gradient(to right, #F90707,#0EC3FF,#FD3203,#FC058A,#A702FD,#FB4904,#047FA7);
+	-webkit-background-clip:text;
+	animation: animate 10s linear infinite;
+	-webkit-background-size: 500%;
+	background-size: 500%;
+ }
+@keyframes animate{
+	0%{
+		background-position: 0% 100%;
+	}
+	50%{
+		background-position: 100% 0%;
+	}
+	100%{
+		background-position: 0% 100%;
+	}
+}
+.btn-blue{
+    background-color:rgb(19, 153, 231);
+    color: white;
+}
+#countdown .btn:hover{
+    color:white;
+    cursor:auto;
+
+}
+.icons a{
+    width:60px;
+    height:60px;
+    background-color: rgb(20 30 53/var(--bg-opacity));
+    margin:50px 0;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 15%;
+    box-shadow: 0 4px 8px 0 rgba(26, 85, 128, 0.795), 0 6px 20px 0 rgba(16, 86, 190, 0.671);
+    z-index: 1;
+}
+
+.icons a .icon{
+    position: relative;
+    color: rgb(19, 153, 231);
+    transition: .5s;
+    z-index: 3;
+}
+
+.icons a:hover .icon{
+    transform:rotate(360deg);
+    color: white;
+}
+
+.icons a:before{
+    content: '';
+    position: absolute;
+    top:100%;
+    left:0;
+    background-color: rgb(19, 153, 231);
+    width: 100%;
+    height: 100%;
+    transition: .7s;
+    z-index: 2;
+}
+
+.icons a:hover:before{
+    top: 0;
+}
+button a{
+    color: white;
+}
+button a:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+.right-gradient-bg{
+    background-image: linear-gradient(to right, #2164b8, #0088d4, #00abe2, #00cce5, #12ebe0);
+}
+
+.left-gradient-bg{
+    background-image: linear-gradient(to left, #2164b8, #0088d4, #00abe2, #00cce5, #12ebe0);
+}
+
+#events a{
+    color: white;
+}
+
+#events a:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.profile 
+{
+    box-shadow: 0 4px 8px 0 rgba(26, 85, 128, 0.795), 0 6px 20px 0 rgba(16, 86, 190, 0.671);;
+}
+
+.slider{
+    height: 250px;
+    /* margin: auto; */
+    /* width: 90%; */
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+}
+.slide-track{
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 80s linear infinite;
+}
+.slide{
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.slide h6{
+    font-size: 20px;
+}
+#About h4{
+    font-family: 'Graduate';
+    font-size: 15px;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*40));
+    }
+}
